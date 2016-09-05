@@ -38,6 +38,7 @@ public class Main
 
         final String data = getInfo(pokemonGo);
 
+        System.out.println("---- Below is Json string ----");
         System.out.println(data);
     }
 
