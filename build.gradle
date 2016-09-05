@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'Main'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'com.pokegoapi:PokeGOAPI-library:0.4.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'org.projectlombok:lombok:1.16.8'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.8.1'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.8.1'
+}
