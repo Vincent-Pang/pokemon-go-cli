@@ -1,18 +1,18 @@
 # pokemon-go-cli
 
 **Run the program:**
-Download the files as zip. And then extract it from your awesome directory.
+Download pokemon-go-cli-X.X.X.zip from the dist folder, and then extract it.
 
  - On Mac OS, open termnial
 
 ```
-$ cd /your_awesome_folder
-$ ./gradlew run
+$ cd /pokemon-go-cli-X.X.X
+$ ./bin/pokemon-go-cli
 ```
 
  - On Windows, open command prompt
 
 ```
-cd your_awesome_folder
-gradlew.bat run
+cd /pokemon-go-cli-X.X.X
+bin/pokemon-go-cli
 ```
