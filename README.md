@@ -13,8 +13,8 @@ $ ./bin/pokemon-go-cli
  - On Windows, open command prompt
 
 ```
-cd /pokemon-go-cli
-bin/pokemon-go-cli
+cd \pokemon-go-cli
+bin\pokemon-go-cli
 ```
 
 **Copy the Json to Jacky's Pokemon GO Template:**  
