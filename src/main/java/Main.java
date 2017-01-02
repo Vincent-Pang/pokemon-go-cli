@@ -3,6 +3,7 @@ import com.pokegoapi.api.PokemonGo;
 import com.pokegoapi.api.inventory.Inventories;
 import com.pokegoapi.auth.GoogleUserCredentialProvider;
 import com.pokegoapi.auth.PtcCredentialProvider;
+import com.pokegoapi.util.hash.legacy.LegacyHashProvider;
 import lombok.Getter;
 import lombok.Setter;
 import okhttp3.OkHttpClient;
@@ -81,7 +82,7 @@ public class Main
 
             provider.login(accessToken);
 
-            pokemonGo.login(provider);
+            pokemonGo.login(provider, new LegacyHashProvider());
         }
         catch (final Exception expt)
         {
@@ -106,7 +107,8 @@ public class Main
 
         try
         {
-            pokemonGo.login(new PtcCredentialProvider(httpClient, userName, password));
+            pokemonGo.login(new PtcCredentialProvider(httpClient, userName, password)
+                            , new LegacyHashProvider());
         }
         catch (final Exception expt)
         {

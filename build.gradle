@@ -1,6 +1,9 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 mainClassName = 'Main'
 
 repositories {
@@ -9,7 +12,8 @@ repositories {
 }
 
 dependencies {
-    compile 'com.pokegoapi:PokeGOAPI-library:0.4.1'
+    //compile 'com.pokegoapi:PokeGOAPI-library:0.4.1'
+    compile files ('thirdparty/PokeGOAPI-library-all-0.4.1.jar')
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'org.projectlombok:lombok:1.16.8'
     compile 'com.fasterxml.jackson.core:jackson-annotations:2.8.1'
